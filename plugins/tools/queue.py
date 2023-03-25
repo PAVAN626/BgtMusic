@@ -1,28 +1,4 @@
-# Power By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Update
-# Join @AdityaCheats For Hack
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
 
-import asyncio
-import os
-from random import randint
-
-from pyrogram import filters
-from pyrogram.errors import FloodWait
-from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
-
-from modules import config
-from modules.config import BANNED_USERS
-from modules.strings import get_command
-from modules.utils.helpers.filters import command
-from modules import app
-from modules.misc import db
-from modules.utils import (Adityabin, get_channeplayCB,
-                              seconds_to_min)
-from modules.utils.database import (get_cmode, is_active_chat,
-                                       is_music_playing)
-from modules.utils.decorators.language import language, languageCB
-from modules.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
